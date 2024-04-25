@@ -8,12 +8,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class Adaptador extends RecyclerView.Adapter<VistaHolder> {
 
-    private String[] elementos;
-    public Adaptador(String[] elementos) {
+    private Contacto[] elementos;
+    public Adaptador(Contacto[] elementos) {
         this.elementos = elementos;
     }
 
-    public void refresh(String[] elementos){
+    public void refresh(Contacto[] elementos){
         this.elementos = elementos;
         notifyDataSetChanged();
     }
@@ -28,7 +28,10 @@ public class Adaptador extends RecyclerView.Adapter<VistaHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull VistaHolder holder, int position) {
-        holder.txvTitulo.setText(elementos[position]);
+        Contacto contacto = elementos[position];
+        holder.txvNombre.setText(contacto.nombre);
+        holder.txvTelefono.setText(contacto.telefono);
+        holder.imgFotografia.setImageResource(contacto.fotografia);
     }
 
     @Override

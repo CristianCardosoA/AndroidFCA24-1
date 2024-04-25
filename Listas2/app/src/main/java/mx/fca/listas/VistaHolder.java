@@ -1,15 +1,20 @@
 package mx.fca.listas;
 
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class VistaHolder extends RecyclerView.ViewHolder {
-    TextView txvTitulo;
+    TextView txvNombre;
+    TextView txvTelefono;
+    ImageView imgFotografia;
 
     public VistaHolder(@NonNull View itemView) {
         super(itemView);
-        txvTitulo = itemView.findViewById(R.id.titulo);
+        txvNombre = itemView.findViewById(R.id.nombre);
+        txvTelefono = itemView.findViewById(R.id.telefono);
+        imgFotografia = itemView.findViewById(R.id.fotografia);
     }
 }
