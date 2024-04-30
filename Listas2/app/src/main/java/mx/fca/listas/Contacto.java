@@ -2,6 +2,8 @@ package mx.fca.listas;
 
 public class Contacto {
 
+    long id;
+
     String nombre;
     String telefono;
 
@@ -16,6 +18,7 @@ public class Contacto {
     String direccion;
 
     public Contacto(
+            long id,
             String nombre,
             String telefono,
             String etiqueta,
@@ -24,6 +27,7 @@ public class Contacto {
             String correo2,
             String direccion
     ) {
+        this.id = id;
         this.nombre = nombre;
         this.telefono = telefono;
         this.etiqueta = etiqueta;

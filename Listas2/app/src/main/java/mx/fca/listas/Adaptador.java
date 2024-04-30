@@ -32,6 +32,7 @@ public class Adaptador extends RecyclerView.Adapter<VistaHolder> {
         holder.txvNombre.setText(contacto.nombre);
         holder.txvTelefono.setText(contacto.telefono);
         holder.imgFotografia.setImageResource(contacto.fotografia);
+        holder.setContact(contacto);
     }
 
     @Override
