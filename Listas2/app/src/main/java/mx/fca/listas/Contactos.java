@@ -42,7 +42,7 @@ public class Contactos {
     };
 
     public static Contacto getContacto(long id) {
-        for(int i = 0; i < Contactos.all.length - 1; i++) {
+        for(int i = 0; i <= Contactos.all.length - 1; i++) {
             if (Contactos.all[i].id == id){
                 return Contactos.all[i];
             }

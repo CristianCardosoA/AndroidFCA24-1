@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
         lista = findViewById(R.id.lista);
         lista.setAdapter(new Adaptador(Contactos.all));
-        lista.setLayoutManager(new LinearLayoutManager(this));
+        //lista.setLayoutManager(new LinearLayoutManager(this));
+        lista.setLayoutManager(new AutoFitGridLayoutManager(this, 300));
     }
 }
