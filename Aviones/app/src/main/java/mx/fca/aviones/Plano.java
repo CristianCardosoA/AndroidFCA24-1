@@ -1,8 +1,10 @@
 package mx.fca.aviones;
 
+import java.util.ArrayList;
+
 public class Plano {
 
-    public Avion[] aviones;
+    public ArrayList<Avion> aviones;
 
     public int col;
 
@@ -10,7 +12,7 @@ public class Plano {
 
     public int noPaso;
 
-    Plano(int noPaso, Avion[] aviones ) {
+    Plano(int noPaso, ArrayList<Avion> aviones ) {
 
         this.noPaso = noPaso;
         this.aviones = aviones;
@@ -30,8 +32,7 @@ public class Plano {
     }
 
     public Plano next() {
-        // Tus vas a implementar
-        return null;
+        return Analizador.next(noPaso, this);
     }
 
     public Plano prev() {

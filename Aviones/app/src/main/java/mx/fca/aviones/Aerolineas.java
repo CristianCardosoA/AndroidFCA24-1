@@ -1,17 +1,18 @@
 package mx.fca.aviones;
 
+import java.util.ArrayList;
+
 public class Aerolineas {
 
-    public static Avion[] AEROMEXICO = {
-            new Avion(Direccion.EAST, 0, 0),
-            new Avion(Direccion.WEST, 2, 0),
-            new Avion(Direccion.WEST, 5, 2),
-            new Avion(Direccion.WEST, 15, 2),
-            new Avion(Direccion.WEST, 1, 20)
-    };
-
-    public static Avion[] VIVAEROBUS = {
-            new Avion(Direccion.EAST, 0, 0),
-            new Avion(Direccion.WEST, 2, 0),
-    };
+    public static ArrayList<Avion> AEROMEXICO(){
+        ArrayList<Avion> aviones = new ArrayList<>();
+        aviones.add(new Avion(Direccion.EAST, 0, 0));
+        aviones.add(new Avion(Direccion.EAST, 0, 0));
+        aviones.add(new Avion(Direccion.EAST, 0, 0));
+        aviones.add(new Avion(Direccion.EAST, 0, 0));
+        aviones.add(new Avion(Direccion.EAST, 0, 0));
+        aviones.add(new Avion(Direccion.EAST, 0, 0));
+        aviones.add(new Avion(Direccion.NORTH, 5, 5));
+        return aviones;
+    }
 }
