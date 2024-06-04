@@ -13,9 +13,6 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView listaAviones;
     AvionAdapter adapter;
 
-    @Override
-    @Table("usuarios")
-
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
@@ -32,7 +29,5 @@ public class MainActivity extends AppCompatActivity {
             plano = plano.next();
             adapter.notifyDataSetChanged();
         });
-
-
     }
 }
