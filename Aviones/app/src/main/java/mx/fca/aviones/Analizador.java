@@ -38,10 +38,13 @@ public class Analizador {
                 switch (avion.direccion){
                     case NORTH:
                         avion.y = avion.y - 1;
+                        break;
                     case SOUTH:
                         avion.y = avion.y + 1;
+                        break;
                     case EAST:
                         avion.x = avion.x + 1;
+                        break;
                     case WEST:
                         avion.x = avion.x - 1;
                         break;
